@@ -1,0 +1,533 @@
+@import 'normalizez.scss'
+@import 'resets.scss'
+
+@font-face
+    font-family: 'Candal'
+    src: url(../fonts/Candal.ttf)
+
+@font-face
+    font-family: 'Forum'
+    src: url(../fonts/Forum.ttf)
+
+@font-face
+    font-family: 'Fraunces-Light'
+    src: url(../fonts/Fraunces-Light.ttf)
+@font-face
+    font-family: 'Fraunces-Regular'
+    src: url(../fonts/Fraunces-Regular.ttf)
+    font-weight: 400
+
+@font-face
+    font-family: 'Fraunces-Thin'
+    src: url(../fonts/Fraunces-Thin.ttf)
+    font-weight: 100
+
+@font-face
+    font-family: 'Impacted'
+    src: url(../fonts/Impacted.ttf)
+
+@font-face
+    font-family: 'HinaMincho-Regular'
+    src: url(../fonts/HinaMincho-Regular.ttf)
+
+html
+    font-family: 'Fraunces-Thin'
+    color: rgba(130, 130, 130, 1)
+.pop-up
+    width: 100%
+    height: 100%
+    position: fixed
+    left: 0
+    top: 0
+    transform: translateY(50.0%) scale(0)
+    transition: .7s ease-in-out
+    background-color: transparent
+    z-index: 2пш
+    &__container
+        display: flex
+        width: 100%
+        height: 100%
+    &__body
+        border: 1px solid rgba(98, 191, 255, 1)
+        margin: auto
+        width: 200px
+        min-height: 300px
+        background-color: #fff
+        border-radius: 10px
+        text-align: center
+        position: relative
+        box-shadow: 10px 10px 15px white
+    &__close
+        color: black
+        position: absolute
+        top: 2px
+        right: 3px
+        font-size: 25px
+        cursor: pointer
+    &__description
+        font-size: 16px
+        line-height: 20px
+        margin: 10px 0
+    &__hr
+        margin: 0
+        width: 197px
+        color: rgba(130, 130, 130, 1)
+    &__text
+        color: rgba(130, 130, 130, 1)
+    &__btn
+        margin-bottom: 10px!important
+        width: 120px!important
+    &__flex
+        display: flex
+        justify-content: space-around
+    &__f-item
+        p
+            max-width: 90px
+            font-size: 13px
+            line-height: 12px
+    form
+        input,textarea
+            border: 1px solid rgba(98, 191, 255, 1)
+            
+.pop-up.active
+    background-color: rgba(0,0,0,.8 )
+    transform: translate(0%) scale(100%)
+    
+
+.p
+    color: rgba(0, 0, 0, 1)
+    line-height: 22.19px
+    font-family: 'Impacted'
+
+.nz
+    color: rgba(98, 191, 255, 1)
+    line-height: 22.19px
+    font-family: 'Impacted'
+.green
+    color: rgba(33, 160, 53, 1)
+.pink
+    color: rgba(255, 13, 100, 1)
+
+.container
+    max-width: 1140px
+    margin: 0 auto
+// <!-- Шапка -->
+.navbar-section
+    &__nav-container
+        display: flex
+        justify-content: space-between
+        height: 160px
+        align-items: center
+    &__text
+        font-family: 'Candal'
+        font-size: 12px
+        line-height: 10px
+        letter-spacing: 0.12em
+        color: #828282
+.info-menu
+    display: flex
+    justify-content: space-between
+    &__info
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__about-item
+        font-family: 'Forum'
+        font-weight: 400
+        font-size: 16px
+        line-height: 18px
+        position: relative
+        padding: 5px
+        &_footer
+            display: flex
+            margin-bottom: 16px
+            font-family: 'Forum'
+            margin-left: 10px
+
+        img
+            position: absolute
+            left: -25px
+    &__info-item
+        &_tel
+            font-family: 'Fraunces-Regular'
+            font-weight: 400
+            font-size: 22px
+            position: relative
+            margin-bottom: 5px
+            color: rgba(4, 36, 61, 1)
+            img
+                position: absolute
+                left: -25px
+            a
+                text-decoration: none
+                color: rgba(4, 36, 61, 1)
+        &_back
+            font-size: 16px
+            line-height: 18px
+            color: #62BFFF
+        &_mail
+            font-family: 'Fraunces-Light'
+            font-size: 16px
+            line-height: 20px
+hr
+    border: 1px solid #828282
+    width: 1440px
+// <!-- Навигационное меню -->
+.navbar-menu
+    height: 110px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &__item
+        margin-right: 35px
+        font-size: 16px
+        color: black
+        &:last-child
+            margin: 0
+    &__list
+        display: flex
+        justify-content: space-between
+        a
+            text-decoration: none
+.button
+    width: 180px
+    height: 50px
+    background: #62BFFF
+    border-radius: 50px
+    border: none
+    color: white
+    cursor: pointer
+    &_white
+        width: 180px
+        height: 50px
+        background: #FFFFFF
+        border: 1px solid #62BFFF
+        border-radius: 50px
+        color: #62BFFF
+        cursor: pointer
+// Первая секция
+.first-section
+    margin-bottom: 50px
+    &__container
+        display: flex
+        justify-content: space-between
+    &__description
+        display: flex
+        flex-direction: column
+        justify-content: center
+    &__text
+        font-family: 'Impacted'
+        font-size: 26px
+        width: 200px
+        font-weight: bold
+        margin-bottom: 25px
+        color: #04243D
+    &__subtext
+        width: 260px
+        font-weight: 100
+        font-size: 12px
+        line-height: 15px
+        color: #828282
+        margin-bottom: 25px
+.btn-list
+    font-family: 'Fraunces-Thin'
+    &__btn-call
+        margin-right: 30px
+        width: 150px
+        height: 50px
+    &__btn-white
+        background: #FFFFFF
+        border: 1px solid #62BFFF
+        border-radius: 50px
+        color: #62BFFF
+        &_square
+            background: #FFFFFF
+            border: 1px solid #62BFFF
+            border-radius: 10px
+            color: #62BFFF
+
+// Описание H3 блока
+.description
+    font-family: 'Impacted'
+    font-style: normal
+    font-weight: 400
+    font-size: 26px
+    line-height: 32px
+    color: #04243D
+// Вторая секция
+.second-section
+    margin-bottom: 50px
+    &__about
+        margin-bottom: 50px
+    &__btn
+        display: flex
+        justify-content: space-between
+// Третья секция
+.card-box
+    display: flex
+    justify-content: space-evenly
+    &__text
+        margin-bottom: 25px
+        &_margin
+            margin: 0
+
+    &__description
+        display: flex
+        flex-direction: column
+        justify-content: center
+
+    &__subtext
+        font-size: 18px
+        margin-bottom: 25px
+        width: 400px
+        &_fourth-section-margin
+            font-size: 18px
+            margin-bottom: 25px
+        &_fifth
+            width: 546px
+            font-size: 18px
+            margin-bottom: 25px
+            &:last-child
+                margin: 0
+        &_sixth
+            width: 520px
+            margin-bottom: 25px
+.third-section
+    margin-bottom: 64px
+    &__container
+        margin-bottom: 25px
+    &__support
+        font-size: 18px
+        line-height: 22px
+        color: #828282
+        margin-bottom: 25px
+    &__card-container
+        display: flex
+        justify-content: space-between
+    &__card-item
+        display: flex
+        flex-direction: column
+        img
+            margin: 0 auto
+            margin-bottom: 15px
+.fourth-section
+    position: relative
+    &__absolute-container
+        position: absolute
+        display: flex
+        flex-direction: column
+        align-items: flex-end
+        top: 0
+        right: 0
+    &__flex
+        display: flex
+        align-items: flex-end
+        margin-bottom: 20px
+    &__person
+        color: rgba(4, 36, 61, 1)
+        width: 300px
+        font-size: 18px
+    &__about
+        width: 607px
+        font-size: 18px
+        line-height: 22px
+        color: rgba(130, 130, 130, 1)
+    &__icon
+        margin-bottom: 30px
+    &__card-box
+        width: 650px
+        height: 175px
+        margin-bottom: 320px
+
+.fifth-section
+    margin-bottom: 63px
+.sixth-section
+    margin-bottom: 50px
+    &__card-container
+        display: flex
+        justify-content: space-between
+    &__card-item
+        display: flex
+        flex-direction: column
+    &__description
+        margin-right: auto
+        font-size: 26px
+        line-height: 32px
+        color: rgba(98, 191, 255, 1)
+        font-family: 'Impacted'
+
+.seven-section
+    margin-bottom: 133px
+    &__description
+        margin-bottom: 25px
+    &__btn
+        background-color: white
+        color: #62BFFF
+        border: 1px solid #62BFFF
+        cursor: pointer
+        font-weight: 600
+        margin-bottom: 25px
+    &__card-container
+        display: flex
+        justify-content: space-between
+    &__card-item
+        display: flex
+        flex-direction: column
+        img
+            margin-bottom: 10px
+        h3
+            font-family: 'Impacted'
+            font-size: 15px
+            color: rgba(4, 36, 61, 1)
+            margin: 0 auto
+        p
+            margin: 0 auto
+
+.footer-section
+    position: relative
+    border: 1px solid #62BFFF
+    width: 1140px
+    height: 369px
+    &__container
+        margin-left: 10px
+        margin-top: 10px
+        margin-bottom: 42px
+    &__absolute-container
+        width: 700px
+        position: absolute
+        display: flex
+        justify-content: space-between
+        right: 140px
+        top: 17px
+    &__card-box
+        display: flex
+        flex-direction: column
+    &__card-item
+        font-family: 'Fraunces-Thin'
+        margin-bottom: 10px
+        font-size: 16px
+        color: rgba(0, 0, 0, 1)
+        &_tel
+            font-family: 'Fraunces-Regular'
+            font-weight: 400
+            color: rgba(4, 36, 61, 1)
+        &:last-child
+            margin: 0
+    &__card-item-about
+        font-family: 'Fraunces-Regular'
+        color: rgba(4, 36, 61, 1)
+        font-size: 26px
+        line-height: 32px
+        margin-bottom: 30px
+
+    &__flex
+        display: flex
+        flex-direction: column
+    &__description
+        margin-bottom: 15px
+        font-size: 16px
+        font-family: 'Impacted'
+        margin-left: 10px
+    &__img-container
+        display: flex
+        img
+            margin-right: 10px
+            &:last-child
+                margin: 0
+    &__end
+        margin-left: 5px
+        font-size: 12px
+        line-height: 12px
+        color: rgba(0, 0, 0, 1)
+
+.breadcrumbs
+    margin-bottom: 50px
+    font-size: 16px
+    line-height: 20px
+    cursor: pointer
+    color: rgba(0, 0, 0, 1)
+    margin-top: -20px
+    display: flex
+    a
+        text-decoration: none
+// Услуги
+.services-first-section
+    margin-bottom: 50px
+
+.services-second-section
+    margin-bottom: 100px
+    &__container
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+    &__item
+        display: flex
+        background-image: url('../img/servBG.png')
+        width: 450px
+        height: 200px
+        margin-bottom: 50px
+    &__about-container
+        display: flex
+        align-items: center
+        flex-direction: column
+        margin: 0 auto
+        justify-content: center
+    &__about
+        font-family: 'HinaMincho-Regular'
+        font-size: 22px
+        line-height: 32px
+        color: rgba(4, 36, 61, 1)
+// Врачи
+
+.doctors-first-section
+    margin-bottom: 25px
+.doctors-second-section
+    &__container
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+    &__item
+        display: flex
+        flex-direction: column
+        justify-content: flex-end
+        margin-bottom: 50px
+        &_first
+            margin-right: 142px
+    &__border
+        width: 285px
+        height: 100px
+        padding: 3px
+        border: 1px solid #62BFFF
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__about
+        width: 285px
+    &__last-two
+        display: flex
+        flex-wrap: wrap
+    &__description
+        font-size: 16px
+.doctors-second-section
+    margin-bottom: 25px
+.doctors-third-section
+    margin-bottom: 78px
+    &__container
+        display: flex
+        justify-content: space-between
+    &__item
+        display: flex
+        flex-direction: column
+        justify-content: flex-end
+    &__border
+        max-width: 285px
+        height: 64px
+        border: 1px solid #62BFFF
+        padding: 5px
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__description
+        font-size: 16px
+    &__about
+        margin-bottom: 10px
