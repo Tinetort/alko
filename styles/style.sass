@@ -42,7 +42,7 @@ html
     transform: translateY(50.0%) scale(0)
     transition: .7s ease-in-out
     background-color: transparent
-    z-index: 2пш
+    z-index: 2
     &__container
         display: flex
         width: 100%
@@ -93,7 +93,9 @@ html
     background-color: rgba(0,0,0,.8 )
     transform: translate(0%) scale(100%)
     
-
+.invisible
+    margin: 0
+    border: 1px solid white
 .p
     color: rgba(0, 0, 0, 1)
     line-height: 22.19px
@@ -384,6 +386,7 @@ hr
             margin: 0 auto
 
 .footer-section
+    margin-bottom: 100px
     position: relative
     border: 1px solid #62BFFF
     width: 1140px
@@ -531,3 +534,70 @@ hr
         font-size: 16px
     &__about
         margin-bottom: 10px
+
+.reviews-breadcrumbs
+    margin-bottom: 50px
+.reviews-first-section
+    margin-bottom: 50px
+    display: flex
+    &__about
+        display: flex
+        flex-direction: column
+    &__description
+        margin-bottom: 25px
+    &__text
+        margin-bottom: 25px
+        max-width: 806px
+        font-size: 18px
+        color: rgba(0, 0, 0, 1)
+    &__about-person
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__person
+        color: rgba(4, 36, 61, 1)
+        margin: 10px 0
+    &__peroson-info
+        font-size: 14px
+.reviews-second-section
+    margin-bottom: 25px
+.reviews-third-section
+    margin-bottom: 100px
+    &__container
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+    &__sub-container
+        display: flex
+        flex-direction: column
+    &__card-box
+        box-shadow: 5px 5px 15px black
+        padding: 5px
+        width: 500px
+        border: 1px solid rgba(98, 191, 255, 1)
+        position: relative
+        display: flex
+        flex-direction: column
+        margin-bottom: 25px
+    &__card-box-description
+        font-size: 26px
+        line-height: 32px
+        color: rgba(4, 36, 61, 1)
+    &__card-box-text
+        font-size: 16px
+        max-width: 360px
+        padding: 5px
+    &__absolute-card-box
+        display: flex
+        flex-direction: column
+        position: absolute
+        right: 0
+        top: 0
+    &__stars-box
+        display: flex
+
+
+
+
+
+
