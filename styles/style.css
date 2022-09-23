@@ -848,6 +848,9 @@ hr {
   width: 1140px;
   height: 369px;
 }
+.footer-section__link {
+  text-decoration: none;
+}
 .footer-section__container {
   margin-left: 10px;
   margin-top: 10px;
@@ -866,6 +869,7 @@ hr {
   flex-direction: column;
 }
 .footer-section__card-item {
+  cursor: pointer;
   font-family: "Fraunces-Thin";
   margin-bottom: 10px;
   font-size: 16px;
@@ -875,9 +879,6 @@ hr {
   font-family: "Fraunces-Regular";
   font-weight: 400;
   color: rgb(4, 36, 61);
-}
-.footer-section__card-item:last-child {
-  margin: 0;
 }
 .footer-section__card-item-about {
   font-family: "Fraunces-Regular";
@@ -1645,4 +1646,27 @@ hr {
 .article-fourteen-section__more {
   text-decoration: none;
   color: #04243D;
+}
+
+.vacancies {
+  margin-bottom: 100px;
+}
+.vacancies__description {
+  margin-bottom: 50px;
+}
+.vacancies__flex {
+  display: flex;
+  justify-content: space-between;
+}
+.vacancies__cardbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.vacancies__text {
+  max-width: 607px;
+}
+.vacancies__h3 {
+  color: #04243D;
+  margin-bottom: 7px;
 }/*# sourceMappingURL=style.css.map */
