@@ -1,6 +1,5 @@
 @import 'normalizez.scss'
 @import 'resets.scss'
-
 @font-face
     font-family: 'Candal'
     src: url(../fonts/Candal.ttf)
@@ -37,7 +36,7 @@
 html
     font-family: 'Fraunces-Thin'
     color: rgba(130, 130, 130, 1)
-    overflow-x: hidden
+    // overflow-x: hidden
 .pop-up
     width: 100%
     height: 100%
@@ -131,6 +130,10 @@ html
         line-height: 10px
         letter-spacing: 0.12em
         color: #828282
+        @media all and (max-width: 620px)
+            font-size: 10px
+        @media all and (max-width: 545px)
+            font-size: 7px
 .info-menu
     display: flex
     justify-content: space-between
@@ -145,11 +148,15 @@ html
         line-height: 18px
         position: relative
         padding: 5px
+        @media all and (max-width: 545px)
+            font-size: 12px
         &_footer
             display: flex
             margin-bottom: 16px
             font-family: 'Forum'
             margin-left: 10px
+            @media all and (max-width: 545px)
+                font-size: 10px
 
         img
             position: absolute
@@ -168,6 +175,8 @@ html
             a
                 text-decoration: none
                 color: rgba(4, 36, 61, 1)
+                @media all and (max-width: 563px)
+                    font-size: 13px
         &_back
             font-size: 16px
             line-height: 18px
@@ -192,6 +201,9 @@ hr
         color: black
         &:last-child
             margin: 0
+    &__link
+        @media all and (max-width: 551px)
+            font-size: 12px
     &__list
         display: flex
         justify-content: space-between
@@ -205,6 +217,10 @@ hr
     border: none
     color: white
     cursor: pointer
+    @media all and (max-width: 640px)
+        width: 120px
+    @media all and (max-width: 600px)
+        width: 100px
     &_white
         width: 180px
         height: 50px
@@ -219,6 +235,11 @@ hr
     &__container
         display: flex
         justify-content: space-between
+        @media all and (max-width: 640px)
+            display: flex
+            justify-content: space-between
+            flex-direction: column
+            align-items: center
     &__description
         display: flex
         flex-direction: column
@@ -237,6 +258,8 @@ hr
         line-height: 15px
         color: #828282
         margin-bottom: 25px
+
+
 .btn-list
     font-family: 'Fraunces-Thin'
     &__btn-call
@@ -291,19 +314,27 @@ hr
         &_fourth-section-margin
             font-size: 18px
             margin-bottom: 25px
+            @media all and (max-width: 545px)
+                font-size: 15px
         &_fifth
-            width: 546px
             font-size: 18px
             margin-bottom: 25px
+            @media all and (max-width: 545px)
+                font-size: 15px
             &:last-child
                 margin: 0
         &_sixth
-            width: 520px
+            max-width: 520px
             margin-bottom: 25px
 .third-section
     margin-bottom: 64px
+    @media all and (max-width: 640px)
+        margin-bottom: 90px
+    @media all and (max-width: 600px)
+        margin-bottom: 135px
     &__container
         margin-bottom: 25px
+        flex-wrap: wrap
     &__support
         font-size: 18px
         line-height: 22px
@@ -335,17 +366,27 @@ hr
         color: rgba(4, 36, 61, 1)
         width: 300px
         font-size: 18px
+        @media all and (max-width: 565px)
+            width: 223px
     &__about
         width: 607px
         font-size: 18px
         line-height: 22px
         color: rgba(130, 130, 130, 1)
+        @media all and (max-width: 600px)
+            width: 520px
+        @media all and (max-width: 545px)
+                font-size: 15px
     &__icon
         margin-bottom: 30px
     &__card-box
         width: 650px
         height: 175px
         margin-bottom: 320px
+        @media all and (max-width: 640px)
+            width: 320px
+        @media all and (max-width: 600px)
+            width: 230px
 
 .fifth-section
     margin-bottom: 63px
@@ -378,6 +419,8 @@ hr
     &__card-container
         display: flex
         justify-content: space-between
+        flex-wrap: wrap
+        justify-content: center
     &__card-item
         display: flex
         flex-direction: column
@@ -395,8 +438,9 @@ hr
     margin-bottom: 100px
     position: relative
     border: 1px solid #62BFFF
-    width: 1140px
-    height: 369px
+    max-width: 1140px
+    height: 100%
+        
     &__link
         text-decoration: none
     &__container
@@ -410,6 +454,12 @@ hr
         justify-content: space-between
         right: 140px
         top: 17px
+        @media all and (max-width: 640px)
+            width: 479px
+            right: -7px
+        @media all and (max-width: 620px)
+            width: 386px
+            right: 15px
     &__card-box
         display: flex
         flex-direction: column
@@ -419,16 +469,22 @@ hr
         margin-bottom: 10px
         font-size: 16px
         color: rgba(0, 0, 0, 1)
+        @media all and (max-width: 620px)
+            font-size: 10px
         &_tel
             font-family: 'Fraunces-Regular'
             font-weight: 400
             color: rgba(4, 36, 61, 1)
+            @media all and (max-width: 620px)
+                font-size: 14px
     &__card-item-about
         font-family: 'Fraunces-Regular'
         color: rgba(4, 36, 61, 1)
         font-size: 26px
         line-height: 32px
         margin-bottom: 30px
+        @media all and (max-width: 620px)
+            font-size: 16px
 
     &__flex
         display: flex
@@ -438,8 +494,12 @@ hr
         font-size: 16px
         font-family: 'Impacted'
         margin-left: 10px
+        @media all and (max-width: 620px)
+            display: none
     &__img-container
         display: flex
+        @media all and (max-width: 620px)
+            display: none
         img
             margin-right: 10px
             &:last-child
@@ -449,6 +509,8 @@ hr
         font-size: 12px
         line-height: 12px
         color: rgba(0, 0, 0, 1)
+        @media all and (max-width: 640px)
+            font-size: 6px
 
 .breadcrumbs
     margin-bottom: 50px
@@ -1042,3 +1104,111 @@ hr
         margin-bottom: 7px
 
 
+
+
+@media all and (max-width: 1140px)
+    .container
+        width: 760px
+    .first-section__container
+        flex-direction: column
+        align-items: center
+    .button
+        width: 120px
+    .footer-section__absolute-container 
+        width: 535px
+        right: 2px
+    .fourth-section__card-box
+        width: 250px
+    .third-section
+        margin-bottom: 120px
+    .button
+        width: 110px
+@media all and (max-width: 1045px)
+    .container
+        width: 569px
+    .navbar-section__text
+        font-size: 10px
+    .info-menu__about-item
+        font-size: 12px
+    .navbar-menu__link
+        font-size: 12px
+    .fourth-section__about
+        width: 435px
+    .fourth-section__person
+        width: 135px
+    .footer-section__description
+        display: none
+    .footer-section__img-container
+        display: none
+    .footer-section__absolute-container
+        width: 380px
+    .footer-section__card-item
+        font-size: 12px
+    .footer-section__card-item-about 
+        font-size: 20px
+
+@media all and (max-width: 768px)
+    .container
+        width: 100%
+    .first-section__enter-img
+        width: 430px
+    .button
+        width: 90px
+        font-size: 12px
+    .fourth-section__dir
+        width: 200px
+    .fourth-section__absolute-container    
+        top: 85px
+    .fourth-section__about
+        width: 338px
+    .sixth-section__description
+        font-size: 18px
+    .sixth-section__txt
+        font-size: 10px
+    .footer-section__card-item-about 
+        font-size: 16px
+    .footer-section__card-item
+        font-size: 10px
+    .footer-section__absolute-container
+        width: 332px
+    .navbar-section__text
+        font-size: 8px
+@medqia all and (max-width: 480px)
+    
+
+
+
+
+
+// @include lg
+//     .container
+//         width: 1025px
+
+// @include md
+//     .container
+//         width: 769px
+// @media all and (max-width: 768px)
+//     .container
+//         width: 641px
+//     .first-section__container
+//         display: flex
+//         justify-content: space-between
+//         flex-direction: column
+//         align-items: center
+//     .button
+//         width: 112px
+//     .fourth-section__card-box
+//         width: 315px
+//     .third-section
+//         margin-bottom: 100px
+//     .footer-section__absolute-container
+//         width: 435px
+//         right: 6px
+//         top: 18px
+// @media all and (max-width: 640px)
+//     .container
+//         width: 100%
+// @media all and (max-width: 600px)
+//     first-section__enter-img
+//         width: 580px
+    
